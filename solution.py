@@ -9,5 +9,5 @@ def solution(x: np.array, y: np.array) -> bool: # Одна или две выб�
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    stat, pval = mannwhitneyu(x, y, alternative=alternative)
+    stat, pval = mannwhitneyu(x, y, alternative="less")
     return pval < 0.01
